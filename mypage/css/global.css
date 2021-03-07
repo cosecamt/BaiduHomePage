@@ -1,0 +1,369 @@
+/*初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/*Body部分*/
+body{
+    overflow: auto;
+    text-align: center;
+    }
+/*总体容器*/
+.totalDiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+/*透明壳*/
+.informationBox{
+    height: 60px;
+    background: rgba(0,0,0,.2);
+    }
+/*最上分区栏*/
+.areaBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    padding-left: 24px;
+    }
+/*最上用户栏*/
+.userBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    padding-right: 24px;
+    font-size: 13px;
+    color: #eee;
+    }
+/*分区栏导航*/
+.areaAnchor{
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-right: 31px;
+    margin-top: 19px;
+    font-family: Arial, sans-serif;
+    color: #eee;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration: none;
+}
+/*天气栏*/
+.userWeather{
+    display: inline-block;
+    float: left;
+    height: 23px;
+    margin-top: 19px;
+    margin-left: 32px;
+    line-height: 23px;
+    vertical-align: top;
+}
+/*天气文本*/
+.weatherText{
+    display: inline-block;
+    position: relative;
+    float: right;
+    height: 13px;
+    margin-right: 8px;
+    font-family: Arial, sans-serif;
+}
+/*天气度数*/
+.weatherText-num{
+    margin-right: 0;
+}
+/*天气图*/
+.weatherText-img{
+    width: 23px;
+    height: 23px;
+    margin-right: 4px;
+}
+/*用户设置*/
+.userSetting{
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 23px;
+    margin-left: 32px;
+    margin-top: 19px;
+    line-height: 23px;
+}
+/*用户头像*/
+.userFace{
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 30px;
+    margin-left: 32px;
+    margin-top: 15px;
+    line-height: 23px;
+}
+/*用户头像-图片*/
+.UserFace-image{
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    border-radius: 50%;
+}
+/*用户头像-边框*/
+.UserFace-border{
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #4e71f2;
+}
+/*用户头像-文字*/
+.UserFace-text{
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    margin-left: 6px;
+    vertical-align: top;
+}
+/*天气评价*/
+.weatherLevel{
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 0;
+    padding: 0 2px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 17px;
+    background: #4e71f2;
+    border-radius: 3px;
+}
+/*搜索区*/
+.searchBox{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+    height: 40%;
+    width: 654px;
+}
+/*搜索区图片*/
+.baiduLogo{
+    position: relative;
+    height: 60%;
+}
+/*具体图片*/
+.baiduLogo-image{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 15px;
+    width: 270px;
+    height: 129px;
+}
+/*搜索栏*/
+.search{
+    display: block;
+    position: relative;
+    height: 44px;
+}
+/*搜索栏整体*/
+.search-group{
+    display: inline-block;
+    position: relative;
+    width: 546px;
+    height: 100%;
+}
+/*相机照片*/
+.search-photo{
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 20px;
+    margin-top: 13px;
+    background: #fff url("../images/photo.png") 0 -51px;
+}
+/*搜索框主体*/
+.search-main{
+    height: 16px;
+    width: 512px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #e4e4e5;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    outline: none;
+}
+/*搜索按钮*/
+.search-btn{
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 108px;
+    height: 44px;
+    font-size: 17px;
+    border-radius: 0 10px 10px 0;
+    background: #e4e4e5;
+}
+/*功能框部分*/
+.functionBox{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1060px;
+    height: 407px;
+    padding: 16px 24px 0;
+    border-radius: 16px;
+    background: rgba(255,255,255,.85);
+}
+/*功能框主体*/
+.function-main{
+    position: relative;
+    height: 100%;
+}
+/*功能框标签*/
+.function-tab{
+    height: 30px;
+}
+/*标签下的蓝线*/
+.function-line{
+    height: 2px;
+    width: 56px;
+    margin-bottom: 12px;
+    background-color: blue;
+}
+/*功能区主体*/
+.function-body{
+    height: 363px;
+}
+/*标签文本*/
+.tab-text{
+    display: inline-block;
+    float: left;
+    margin-right: 24px;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #9195a3;
+}
+/*部分为深色*/
+.type-deep{
+    color: #222;
+}
+/*磁贴部分*/
+.body-tile{
+    height: 78px;
+    margin: 12px 0 20px;
+    padding: 24px 0 9px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .08);
+}
+/*磁贴菜单*/
+.tile-menu{
+    height: 16px;
+    padding: 0 16px;
+}
+/*磁贴个体*/
+.tile-item{
+    height: 62px;
+}
+/*个人喜好磁贴*/
+.menu-my{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+}
+/*磁贴图标*/
+.menu-icon{
+    float: right;
+    height: 22px;
+    margin-top: -3px;
+    margin-right: 2px;
+}
+/*菜单样式*/
+.menu-display{
+    float: right;
+    height: 16px;
+    line-height: 16px;
+    font-size: 14px;
+}
+/*菜单文字*/
+.menu-write{
+    float: right;
+    height: 16px;
+    margin-left: 24px;
+    font-size: 14px;
+    line-height: 16px;
+}
+/*目标组*/
+.item-group{
+    float: left;
+    width: 128px;
+    height: 32px;
+    margin: 15px 24px;
+    line-height: 32px;
+}
+/*目标图片*/
+.item-group-pic{
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-top: -8px;
+}
+/*目标文字*/
+.item-group-text{
+    display: inline-block;
+    float: left;
+    margin-left: 8px;
+    font-size: 14px;
+}
+/*自定义*/
+.body-custom{
+    height: 16px;
+    margin-top: 4px;
+}
+/*自定义图像*/
+.custom-pic{
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-top: -8px;
+}
+/*自定义文本*/
+.custom-text{
+    float: left;
+    margin-left: 4px;
+    font-size: 14px;
+}
+/*下方横条*/
+.bottomBox{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: #fff;
+}
+/*下方文本*/
+.bottom-text{
+    display: inline-block;
+    margin-right: 18px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #bbb;
+    text-decoration: none;
+}
+/*在磁贴处的两个图片分开设置大小*/
+.item-group-pic1{
+    float: left;
+    width: 32px;
+    height: 32px;
+}
